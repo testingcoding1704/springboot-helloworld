@@ -21,6 +21,12 @@
 		<java.version>1.8</java.version>
 	</properties>
 
+	<scm>
+		<connection>scm:git:git@github.com:testingcoding1704/springboot-helloworld.git</connection>
+		<developerConnection>scm:git:git@github.com:testingcoding1704/springboot-helloworld.git</developerConnection>
+		<url>https://github.com/testingcoding1704/springboot-helloworld</url>
+	</scm>
+
 	<dependencies>
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
