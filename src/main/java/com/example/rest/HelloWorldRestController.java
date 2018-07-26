@@ -7,6 +7,11 @@ import org.springframework.web.bind.annotation.RestController;
 public class HelloWorldRestController {
     @RequestMapping("/")
     public String helloWorld() {
-        return "Hello World!";
+        String result = "Hello World";
+        String helloWorldTo = System.getenv("HELLO_WORLD_TO");
+        if (helloWorldTo != null && !"".equals(helloWorldTo)) {
+            result += " " + helloWorldTo;
+        }
+        return result;
     }
 }
