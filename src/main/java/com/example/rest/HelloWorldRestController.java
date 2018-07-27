@@ -8,9 +8,9 @@ public class HelloWorldRestController {
     @RequestMapping("/")
     public String helloWorld() {
         String result = "Hello World";
-        String helloWorldTo = System.getenv("HELLO_WORLD_TO");
+        String helloWorldTo = System.getenv("VERSION");
         if (helloWorldTo != null && !"".equals(helloWorldTo)) {
-            result += " " + helloWorldTo;
+            result += " VERSION=" + helloWorldTo;
         }
         return result;
     }
